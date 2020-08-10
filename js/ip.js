@@ -4,7 +4,7 @@ $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
 
 function WriteToFile(info) {
     var fs = require('fs');
-    fs.writeFile("/data/test/txt", info, function(err) {
+    fs.writeFile("data/test.txt", info, function(err) {
     if(err) {
         console.log(err);
     } else {
